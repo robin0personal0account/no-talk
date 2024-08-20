@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry, Mahi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>I’m Sorry, Mahi</h1>
+        <p>stupid guy just forgive this time please and click here.</p>
+        <button class="heart-button" onclick="showForgivenessSection()">Let’s Talk ♥</button>
+    </div>
+
+    <div id="forgiveness-section" class="hidden">
+        <h2>Will You Forgive Me?</h2>
+        <div class="character">
+            <img src="img/Doraemon 🎀.jpg" alt="Character">
+        </div>
+        <button class="option-button" onclick="handleForgiveness(true)">Yes</button>
+        <button class="option-button" onclick="handleForgiveness(false)">No</button>
+    </div>
+    
+
+    <div id="response-message" class="hidden">
+        <h2 id="response-text"></h2>
+        <div id="response-image"></div>
+        <div id="confetti" class="hidden"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
